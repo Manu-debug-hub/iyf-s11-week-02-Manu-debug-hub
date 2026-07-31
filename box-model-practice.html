@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model Practice</title>
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        .broken-box {
-            width: 300px;
-            padding: 20px;
-            border: 2px solid grey;
-            margin: 20px 0;
-            background-color: #e0e0e0;
-            box-sizing: border-box;
-        }
-
-        .card-container {
-            border: 20px solid blue;
-            margin: 40px;
-            padding: 20px;
-        }
-
-        .card-content {
-            width: 300px;
-            border: 1px solid blue;
-            background-color: lightgray;
-            padding-top: 0;
-            padding-right: 30px;
-            padding-bottom: 40px;
-            padding-left: 4em;
-            font-size: 15px;
-            box-sizing: border-box;
-        }
-
-        .card-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 10px;
-            width: 100%;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Model Practice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Card Component</h1>
-    <h2>Box Model Practice</h2>
-    
-    <div class="broken-box">
-        This is a box model demonstration
-    </div>
 
-    <div class="card-container">
-        <div class="card-content">
-            <img src="https://images.pexels.com/photos/30642031/pexels-photo-30642031.jpeg" alt="Card image" class="card-image">
-            Card Component.
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar__logo">manu<span>.dev</span></a>
+    <ul class="navbar__links" style="display:flex;">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <p class="eyebrow">task-3.2</p>
+      <h1>Box Model Practice</h1>
+
+      <!-- Exercise 1: Box model visualization -->
+      <h2>Exercise 1 — Content, Padding, Border, Margin</h2>
+      <div class="box-demo">
+        <div class="box-demo__item">
+          <div class="box-content"></div>
+          <p class="box-demo__label">content</p>
         </div>
+        <div class="box-demo__item">
+          <div class="box-padding"></div>
+          <p class="box-demo__label">padding (larger click area)</p>
+        </div>
+        <div class="box-demo__item">
+          <div class="box-border"></div>
+          <p class="box-demo__label">border</p>
+        </div>
+        <div class="box-demo__item">
+          <div class="box-margin-wrap">
+            <div class="box-margin"></div>
+          </div>
+          <p class="box-demo__label">margin (space between boxes)</p>
+        </div>
+      </div>
+
+      <!-- Exercise 2: Debug the layout -->
+      <h2>Exercise 2 — Debug the Layout</h2>
+      <p class="text-sm" style="margin-bottom:1rem;">
+        The original box was 300px wide + 20px padding on each side + default
+        <code>box-sizing: content-box</code>, which adds padding on top of the
+        width and renders at 340px. Fix: set <code>box-sizing: border-box</code>
+        so padding is included inside the declared width.
+      </p>
+      <div class="broken-box-wrap">
+        <div class="broken-box">This box is exactly 300px wide, padding included.</div>
+      </div>
+
+      <!-- Exercise 3: Card component -->
+      <h2>Exercise 3 — Card Component (300px, exact spacing)</h2>
+      <div class="spec-card">
+        <img src="https://via.placeholder.com/260x140/1e222b/7ee787?text=Project" alt="Placeholder project image">
+        <h3 class="spec-card__title">Card Title</h3>
+        <p class="text-sm">Description text explaining the project in a sentence or two.</p>
+        <a href="#" class="button" style="margin-top:1rem;">Learn more</a>
+      </div>
     </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-copyright">© 2026 manu.dev — built with HTML &amp; CSS</p>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manu — Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar__logo">manu<span>.dev</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="navbar__links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <p class="eyebrow">whoami</p>
+        <h1 class="hero__title">I build things that don't break in production.<br>Usually.</h1>
+        <p class="hero__lede">Front-end developer focused on clean CSS architecture, responsive layouts, and interfaces that hold up on every screen size.</p>
+        <div class="hero__actions">
+          <a href="projects.html" class="button button--solid">View projects</a>
+          <a href="contact.html" class="button">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero__terminal">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <p class="line">$ whoami</p>
+        <p class="line"><b>manu</b> — frontend developer</p>
+        <p class="line">$ cat skills.txt</p>
+        <p class="line">HTML · CSS · Flexbox · Grid · Git</p>
+        <p class="line">$ status</p>
+        <p class="line"><b>currently debugging a layout bug</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="eyebrow">what-i-do</p>
+      <h2>Focus areas</h2>
+      <div class="card-row">
+        <article class="card">
+          <div class="card__image"></div>
+          <div class="card__body">
+            <h3 class="card__title">Responsive Layout</h3>
+            <p class="card__desc">Mobile-first builds using Flexbox and Grid that adapt cleanly across breakpoints.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image"></div>
+          <div class="card__body">
+            <h3 class="card__title">Design Systems</h3>
+            <p class="card__desc">Type scales and color tokens defined once in CSS custom properties, reused everywhere.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image"></div>
+          <div class="card__body">
+            <h3 class="card__title">Accessibility</h3>
+            <p class="card__desc">Visible focus states, sensible contrast, and markup that works without a mouse.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">My story</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://github.com/Manu-debug-hub" class="link">GitHub</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Send a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright">© 2026 manu.dev — built with HTML &amp; CSS</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

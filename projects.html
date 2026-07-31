@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — manu.dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar__logo">manu<span>.dev</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="navbar__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <p class="eyebrow">portfolio</p>
+      <h1>Projects</h1>
+      <p class="text-sm" style="margin-bottom:2rem;">3 columns on desktop, 2 on tablet, 1 on mobile.</p>
+
+      <!-- Task 4.2 Exercise 3 / Task 4.3: responsive project cards grid -->
+      <div class="projects-grid">
+        <article class="card">
+          <div class="card__image"></div>
+          <div class="card__body">
+            <h3 class="card__title">CSS Portfolio Site</h3>
+            <p class="card__desc">This site — a responsive, mobile-first portfolio built with Flexbox and Grid.</p>
+            <div class="card__footer"><a href="#" class="link">View code →</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image"></div>
+          <div class="card__body">
+            <h3 class="card__title">Box Model Playground</h3>
+            <p class="card__desc">A visual explainer for content, padding, border, and margin.</p>
+            <div class="card__footer"><a href="box-model-practice.html" class="link">View demo →</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image"></div>
+          <div class="card__body">
+            <h3 class="card__title">Semantic HTML Article</h3>
+            <p class="card__desc">A write-up on semantic HTML and accessibility best practices.</p>
+            <div class="card__footer"><a href="#" class="link">Read article →</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="eyebrow">gallery</p>
+      <h2>Screenshots</h2>
+      <!-- Task 4.2 Exercise 1: Photo gallery grid -->
+      <div class="gallery">
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-copyright">© 2026 manu.dev — built with HTML &amp; CSS</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
