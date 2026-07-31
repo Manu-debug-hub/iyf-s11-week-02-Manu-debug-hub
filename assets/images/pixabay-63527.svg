@@ -1,4 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="100%" height="100%" fill="#f97316" />
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, Arial" font-size="20" fill="#fff">pixabay-63527</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">pixabay-63527 placeholder image</title>
+  <desc id="desc">Decorative placeholder SVG for the projects gallery</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7ee787"/>
+      <stop offset="100%" stop-color="#4fb35a"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0f1115"/>
+  <rect x="40" y="40" width="720" height="420" rx="12" fill="url(#g)" opacity="0.12"/>
+  <g transform="translate(0,0)" fill="#e6e6e6" font-family="Inter, Arial, sans-serif">
+    <text x="50%" y="46%" text-anchor="middle" font-size="32" font-weight="700">pixabay-63527</text>
+    <text x="50%" y="58%" text-anchor="middle" font-size="16" fill="#8b93a1">Replace this file with a real screenshot if available</text>
+  </g>
+  <rect x="36" y="36" width="728" height="428" rx="12" fill="none" stroke="#2a2f3a" stroke-width="2"/>
 </svg>
